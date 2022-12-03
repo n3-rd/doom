@@ -5,7 +5,11 @@
     <div class="z-10 absolute">
       there was a <span class="text-green-600">country</span>
     </div>
-    <div class="z-30 absolute outline-text">there was a country</div>
+    <div
+      class="z-30 absolute text-stroke-black text-stroke text-fill-transparent"
+    >
+      there was a country
+    </div>
     <!-- absolute placed image -->
     <div
       class="rellax z-20 absolute w-[40vw] h-[44vh] bg-cover bg-center bg-[url(/img/pexels-emmanuel-ikwuegbu-8445454.jpg)]"
@@ -13,7 +17,7 @@
       data-rellax-percentage="0.5"
     ></div>
   </div>
-  <div class="word-grouping">
+  <div class="word-grouping w-screen bg-blue-500 py-16">
     <div
       class="h-[14rem] font-black text-[19vw] text-black uppercase leading-[19rem] flex flex-col justify-center items-center"
     >
@@ -63,8 +67,10 @@ export default {
 };
 </script>
 <style lang="scss">
-.outline-text {
-  color: transparent;
-  -webkit-text-stroke: 2px #fff;
-}
+// .outline-text {
+//   color: transparent;
+//   -webkit-text-stroke: 2px #fff;
+//   // remove inner outline
+//   -webkit-text-fill-color: transparent;
+// }
 </style>
