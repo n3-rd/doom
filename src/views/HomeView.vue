@@ -1,4 +1,5 @@
 <script lang="js">
+import NewsScroller from '../components/NewsScroller.vue';
 import AllWrong from '../components/AllWrong.vue';
 import HeroSection from '../components/HeroSection.vue';
 import StorySection from '../components/StorySection.vue';
@@ -7,7 +8,8 @@ export default {
 components: {
     HeroSection,
     StorySection,
-    AllWrong
+    AllWrong,
+    NewsScroller
 },
   mounted() {
     luge.lifecycle.refresh();
@@ -21,5 +23,6 @@ components: {
     <HeroSection />
     <StorySection />
     <AllWrong />
+    <NewsScroller />
   </main>
 </template>

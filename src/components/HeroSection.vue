@@ -26,7 +26,9 @@ export default {
   name: "HeroSection",
   mounted() {
     luge.lifecycle.refresh();
-    const heroText = document.querySelector(".hero-text");
+    const heroText = document.querySelector(".hero-text",{
+      listen: true,
+    });
     luge.scrollobserver.add(heroText)
     heroText.addEventListener("scrollprogress", (e) => {
       // change the color of the text from white to red based on the scroll progress
