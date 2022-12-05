@@ -23,8 +23,6 @@
             src="/img/civilwar-1.jpg"
             alt="boko-haram"
             class="w-full grayscale civilwar-image z-10"
-            data-lg-scroll
-            data-lg-scroll-animate="{'scale': ['1', '1.3'], 'opacity': ['1', '0.3']}"
           />
           <div
             class="stats z-20 bg-transparent text-lg font-sans py-8 text-left"
@@ -82,12 +80,17 @@ export default {
   },
   mounted() {
     luge.lifecycle.refresh();
-    const insurgencyImage = document.querySelector(".insurgency-image");
-    // luge.scrollobserver.add(insurgencyImage);
-    // insurgencyImage.addEventListener("scrollprogress", (e) => {
-    //   // invert image on scroll
-    //   insurgencyImage.style.filter(invert(0 + e.target.scrollProgress));
-    // });
+    const civilWarImage = document.querySelector(".civilwar-image");
+    luge.scrollobserver.add(civilWarImage);
+    civilWarImage.addEventListener("scrollprogress", (e) => {
+      if (e.target.scrollProgress >= 1) {
+        // scale element and make it more transparent on scroll
+        civilWarImage.style.transform = `scale(${
+          1.3 * e.target.scrollProgress
+        })`;
+        civilWarImage.style.opacity = `${0.3 + 0.7 * e.target.scrollProgress}`;
+      }
+    });
   },
 };
 </script>
