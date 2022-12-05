@@ -22,9 +22,9 @@
           <img
             src="/img/coup-1.webp"
             alt="boko-haram"
-            class="w-full grayscale insurgency-image z-10"
+            class="w-full grayscale coup-image z-10"
             data-lg-scroll
-            data-lg-scroll-animate="{'scale': ['1', '1.3'], 'opacity': ['1', '0']}"
+            data-lg-scroll-animate="{'scale': ['1', '1.3'], 'opacity': ['1', '0.3']}"
           />
           <div
             class="stats z-20 bg-transparent text-lg font-sans py-8 text-left"
@@ -84,12 +84,6 @@ export default {
   },
   mounted() {
     luge.lifecycle.refresh();
-    const insurgencyImage = document.querySelector(".insurgency-image");
-    // luge.scrollobserver.add(insurgencyImage);
-    // insurgencyImage.addEventListener("scrollprogress", (e) => {
-    //   // invert image on scroll
-    //   insurgencyImage.style.filter(invert(0 + e.target.scrollProgress));
-    // });
   },
 };
 </script>

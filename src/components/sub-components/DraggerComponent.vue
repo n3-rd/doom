@@ -2,20 +2,9 @@
   <div class="w-screen h-screen justify-center items-center flex">
     <!-- put images in a 4x4 grid -->
     <div class="w-[50%] grid grid-cols-2">
-      <div class="draggable">
-        <img src="/img/split/coup3.jpg" class="w-full" alt="" srcset="" />
-      </div>
-
-      <div class="draggable">
-        <img src="/img/split/coup1.jpg" class="w-full" alt="" srcset="" />
-      </div>
-
-      <div class="draggable">
-        <img src="/img/split/coup4.jpg" class="w-full" alt="" srcset="" />
-      </div>
-
-      <div class="draggable">
-        <img src="/img/split/coup2.jpg" class="w-full" alt="" srcset="" />
+      <div class="draggable" v-for="image in images" :key="image.src">
+        >
+        <img :src="image.src" class="w-full" alt="" srcset="" />
       </div>
     </div>
   </div>
@@ -24,6 +13,11 @@
 <script>
 import interact from "interactjs";
 export default {
+  data() {
+    return {
+      images: this.images,
+    };
+  },
   methods: {
     initDragger() {
       // target elements with the "draggable" class
@@ -81,6 +75,12 @@ export default {
   },
   mounted() {
     this.initDragger();
+  },
+  props: {
+    images: {
+      type: Array,
+      //   required: true,
+    },
   },
 };
 </script>

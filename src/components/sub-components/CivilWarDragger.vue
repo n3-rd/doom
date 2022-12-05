@@ -3,19 +3,19 @@
     <!-- put images in a 4x4 grid -->
     <div class="w-[50%] grid grid-cols-2">
       <div class="draggable">
-        <img src="/img/split/coup3.jpg" class="w-full" alt="" srcset="" />
+        <img src="/img/split/civilwar3.webp" class="w-full" alt="" srcset="" />
       </div>
 
       <div class="draggable">
-        <img src="/img/split/coup1.jpg" class="w-full" alt="" srcset="" />
+        <img src="/img/split/civilwar1.webp" class="w-full" alt="" srcset="" />
       </div>
 
       <div class="draggable">
-        <img src="/img/split/coup4.jpg" class="w-full" alt="" srcset="" />
+        <img src="/img/split/civilwar4.webp" class="w-full" alt="" srcset="" />
       </div>
 
       <div class="draggable">
-        <img src="/img/split/coup2.jpg" class="w-full" alt="" srcset="" />
+        <img src="/img/split/civilwar2.webp" class="w-full" alt="" srcset="" />
       </div>
     </div>
   </div>
