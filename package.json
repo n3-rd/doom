@@ -13,6 +13,7 @@
     "@studio-freight/lenis": "^0.2.24",
     "@waaark/luge": "0.6.11-beta",
     "grained": "^0.0.2",
+    "interactjs": "^1.10.17",
     "rellax": "^1.12.1",
     "sass": "^1.56.1",
     "sticksy": "^0.2.0",

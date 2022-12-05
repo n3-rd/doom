@@ -8,6 +8,7 @@ specifiers:
   '@waaark/luge': 0.6.11-beta
   autoprefixer: ^10.4.13
   grained: ^0.0.2
+  interactjs: ^1.10.17
   npm-run-all: ^4.1.5
   postcss: ^8.4.19
   rellax: ^1.12.1
@@ -25,6 +26,7 @@ dependencies:
   '@studio-freight/lenis': 0.2.24
   '@waaark/luge': 0.6.11-beta
   grained: 0.0.2
+  interactjs: 1.10.17
   rellax: 1.12.1
   sass: 1.56.1
   sticksy: 0.2.0
@@ -103,6 +105,10 @@ packages:
       postcss: 7.0.39
       tailwindcss: 1.9.6
     dev: true
+
+  /@interactjs/types/1.10.17:
+    resolution: {integrity: sha512-X2JpoM7xUw0p9Me0tMaI0HNfcF/Hd07ZZlzpnpEMpGerUZOLoyeThrV9P+CrBHxZrluWJrigJbcdqXliFd0YMA==}
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1008,6 +1014,12 @@ packages:
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
     dev: true
+
+  /interactjs/1.10.17:
+    resolution: {integrity: sha512-grjHJgnWkCoQLmAlk2yalNd1r0ztUhXLJNVjSOfWn1wfNNgU2tx1cDEkro9WYerDNC9UG3MZTeD4O6zOM5gbIA==}
+    dependencies:
+      '@interactjs/types': 1.10.17
+    dev: false
 
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}

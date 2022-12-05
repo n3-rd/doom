@@ -1,9 +1,10 @@
 <script>
 import BokoHaram from "./sub-components/BokoHaram.vue";
+import CoupDetat from "./sub-components/CoupDetat.vue";
 
 export default {
   name: "NewsScroller",
-  components: { BokoHaram },
+  components: { BokoHaram, CoupDetat },
   mounted() {
     luge.lifecycle.refresh();
   },
@@ -11,6 +12,7 @@ export default {
 </script>
 <template>
   <div>
+    <CoupDetat />
     <BokoHaram />
   </div>
 </template>

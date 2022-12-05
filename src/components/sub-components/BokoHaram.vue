@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen min-h-screen bg-[#EF5624]">
     <div
-      class="date text-black text-[18vh] font-black uppercase text-center leading-[12rem] font-display"
+      class="date text-black text-[10vw] font-black uppercase text-center leading-[12rem] font-display"
     >
       <div>Maiduguri,</div>
       <div>2002</div>
@@ -17,7 +17,7 @@
       </div>
 
       <div class="flex w-screen justify-center items-center">
-        <div class="w-[80%] h-[300vh]">
+        <div class="w-[80%]">
           <img
             src="/img/boko-haram-1.jpg"
             alt="boko-haram"
@@ -72,13 +72,18 @@
         </div>
       </div>
     </div>
+    <InsurgencyDragger />
   </div>
 </template>
 <script>
 import "sticksy";
 import luge from "@waaark/luge";
+import InsurgencyDragger from "../sub-components/InsurgencyDragger.vue";
 export default {
   name: "BokoHaram",
+  components: {
+    InsurgencyDragger,
+  },
   mounted() {
     luge.lifecycle.refresh();
     const insurgencyImage = document.querySelector(".insurgency-image");
